@@ -1,0 +1,39 @@
+.taskContainer{
+  display: grid;
+  row-gap: 10px;
+  margin-top: 2rem;
+}
+
+.taskList{
+  display: grid;
+  grid-template-columns: repeat(6,14%);
+ row-gap: 10px;
+ column-gap: 20px;
+}
+.taskList>*{
+  text-align: left;
+}
+
+.taskContainer>button{
+  padding: 0;
+
+}
+.deleteBtn{
+  padding: 0.25rem 1rem;
+  border: solid gray  1px;
+  border-radius: 0.8rem;
+}
+
+.deleteBtn:hover{
+cursor: pointer;
+color: red;
+}
+
+@media  (max-width:500px){
+  .taskList{
+  grid-template-columns: repeat(6,12%);
+  grid-template-rows: max-content;
+
+    column-gap: 15px;
+  }
+}
